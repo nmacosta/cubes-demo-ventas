@@ -1,0 +1,11 @@
+vendedor,cliente,indicador,valor,fecha,tipo
+Sucursal CCS,Supermercado,Total Ventas,5,,mayor
+Sucursal CCS,Ferreteria,Total Ventas,10,2012-11-01,mayor
+Sucursal CCS,Ferreteria,Total Ventas,100,2012-12-28,detal
+Sucursal CCS,Ferreteria,Total Ventas,400,2012-12-31,mayor
+Sucursal CCS,Supermercado,Total Ventas,2000,2013-01-10,detal
+Sucursal MCBO,Supermercado,Total Ventas,4500,2013-01-28,mayor
+Sucursal MCBO,Ferreteria,Total Ventas,1000,2013-02-05,detal
+Sucursal MCBO,Supermercado,Total Ventas,500,2013-02-14,mayor
+Sucursal MCBO,Supermercado,Total Ventas,3000,2013-03-12,detal
+Sucursal MCBO,Supermercado,Total Ventas,1000,2013-03-28,mayor

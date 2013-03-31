@@ -1,0 +1,44 @@
+{
+    "name": "ventas",
+    "label": "Modelos de Ventas Vendedor Cliente",
+    "description": "Permite analizar las ventas por vendor y cliente ",   
+    "dimensions": [   
+	    	{
+	    		"name":"fecha",
+	    		"label":"Fecha",
+	         	"levels" :[
+			                {
+			                    "name":"year",
+			                    "label":"Año",
+			                    "attributes": ["year"]
+			                },
+			                {
+			                    "name":"month",
+			                    "label":"Mes",
+			                    "attributes": ["month"]
+			                },
+			                {
+			                    "name":"day",
+			                    "label":"Día",
+			                    "attributes": ["day"]
+			                }
+			    ]
+	    	},
+	    	{"name":"cliente","label":"Cliente"},
+	    	{"name":"vendedor","label":"Vendedor"},
+	    	{"name":"tipo","label":"Tipo"},
+	        {"name":"indicador","label":"Indicador"}
+    ],
+    "cubes": [
+    	 {
+            "name": "fact_ventas",
+            "dimensions": ["fecha", "vendedor","cliente","tipo","indicador"],
+            "measures": [{"name":"valor", "label":"Valor"}],
+            "mappings": {
+                          "fecha.year": {"column":"fecha", "extract":"year"},
+						  "fecha.month": {"column":"fecha", "extract":"month"},
+						  "fecha.day": {"column":"fecha", "extract":"day"}
+            }
+        }
+    ]
+}
